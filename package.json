@@ -1,0 +1,29 @@
+{
+	"name": "devconnector",
+	"version": "1.0.0",
+	"description": "A Social network application for developers",
+	"main": "index.js",
+	"scripts": {
+		"client-install": "npm install --prefix client",
+		"start": "node index.js",
+		"server": "nodemon index.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.19.0",
+		"concurrently": "^4.1.1",
+		"express": "^4.17.1",
+		"gravatar": "^1.8.0",
+		"jsonwebtoken": "^8.5.1",
+		"moment": "^2.24.0",
+		"mongoose": "^5.6.4",
+		"passport": "^0.4.0",
+		"passport-jwt": "^4.0.0",
+		"react-moment": "^0.9.2",
+		"validator": "^11.1.0"
+	}
+}
